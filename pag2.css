@@ -1,14 +1,22 @@
+body{
+    background-color: rgba(0, 0, 0, 0.849);
+    margin: 0;
+}
+
+
 header{
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(34, 124, 41, 0.658);
+    justify-content: space-between;
+    background-color: rgba(29, 197, 43, 0.658);
     height: 90px;
     align-items: center;
 }
 
+
 ul{
     display: flex;
-    gap: 30px;
+    margin-right: 20px;
+    gap: 25px;
 }
 
 li{
@@ -25,4 +33,7 @@ a:hover{
     font-size: 17px;
     color: rgb(255, 255, 255);
 }
+
+
+
 
