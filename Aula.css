@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+/* Meu Header */
+.cabecalho {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    gap: 10px;
+    background-color: #b1e6d1;
+}
+
+/* Minha Imagem Do Header */
+.img-cabecalho {
+    width: 100%;
+    max-width: 50px;
+}
+
+/* Meu Titulo Do Header */
+.title-cabecalho {
+    font-size: 2rem;
+}
+
+
+/* Minha Primeria Section */
+.sec-01 {
+    background-color: #270a33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 15px;
+
+}
+
+/* Minha Img Da Primeira Section */
+.img-sec {
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Minha Segunda Section  */
+.sec-02 {
+    background-color: #451a3e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40vh;
+    gap: 10px;
+
+}
+
+.sec-03 {
+    background-image: url(Aula-Img/pexels-pixabay-41949.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.sec-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sec03 {
+    background-color:  #b1e6d1;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+
+}
