@@ -4,21 +4,53 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
-    background-color: black;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #734124;
+}
+
+header img {
+    width: 60%;
+}
+
+.logo {
+    padding: 0px 290px 0px 0px;
+    width: 20%;
+}
+
+.navegador ul {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 15px;
+}
+
+.navegador li {
+    list-style: none;
+}
+
+.navegador a {
+    text-decoration: none;
     color: white;
 }
 
 .section-01 {
+    background-color: #D9D9D9;
     display: flex;
     justify-content: center;
-    margin: 40px;
-    gap: 10px;
+    padding: 50px;
+    gap: 30px;
 }
 
 .section-01 img {
     border-radius: 10px;
     width: 25%;
+}
+
+.section-01 img:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px 4px ;
 }
 
 
@@ -33,17 +65,25 @@ header {
 }
 
 .section-02 {
+    background-color: #BFA995;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    margin: 40px;
-    gap: 20px;
+    padding: 50px;
+    gap: 30px;
 }
 
 .section-02 img {
     border-radius: 10px;
     width: 25%;
 }
+
+.section-02 img:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px 4px ;
+}
+
 
 .text-02 {
     display: flex;
@@ -56,11 +96,88 @@ header {
 }
 
 .section-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(Aula-Img/img-1.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 10%;
+    padding: 180px 0px 200px 0px;
 }
 
+.section-03 button {
+    color: white;
+    background-color: #2B400D;
+    box-shadow: 0px 0px 4px 4px #2B400D;
+    border: none;
+    border-radius: 20px;
+    width: 120PX;
+    height: 30PX;
+    cursor: pointer;
+}
 
+.section-03 button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 0px 4px 4px #2B400D;
+}
+
+.section-04 {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.section-04 img {
+    border-radius: 10px;
+    height: 220px;
+    width: 25%;
+}
+
+.section-04 img:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px 4px ;
+}
+
+.text-04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 700px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #734124;
+}
+
+.img-rodape img {
+    width: 15%;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 15px;
+}
+
+.icone a {
+    color: white;
+    text-decoration: none;
+}
+
+.icone a ,img {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
