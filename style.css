@@ -4,18 +4,21 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background-color: #734124;
+    padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 header img {
-    width: 60%;
+    width: 100%;
+    max-width: 150px;
 }
 
 .logo {
-    padding: 0px 290px 0px 0px;
-    width: 20%;
+    padding-right: 0;
+    width: auto;
 }
 
 .navegador ul {
@@ -23,6 +26,7 @@ header img {
     align-items: center;
     padding: 0px 10px;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .navegador li {
@@ -34,77 +38,66 @@ header img {
     color: white;
 }
 
+.section-01,
+.section-02,
+.section-04 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
 .section-01 {
     background-color: #D9D9D9;
-    display: flex;
-    justify-content: center;
-    padding: 100px;
-    gap: 30px;
-}
-
-.section-01 img {
-    border-radius: 10px;
-    width: 25%;
-}
-
-.section-01 img:hover{
-    transform: scale(1.10);
-    transition: 0.5s;
-    box-shadow: 0px 0px 5px 4px ;
-}
-
-
-.text-01 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 700px;
-
 }
 
 .section-02 {
     background-color: #BFA995;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    padding: 100px;
-    gap: 30px;
 }
 
-.section-02 img {
-    border-radius: 10px;
-    width: 25%;
-}
-
-.section-02 img:hover{
-    transform: scale(1.10);
-    transition: 0.5s;
-    box-shadow: 0px 0px 5px 4px ;
-}
-
-
-.text-02 {
-    display: flex;
-    justify-content: center;
+.section-04 {
     align-items: center;
-    flex-direction: column;
+    background-color: #D9D9D9;
+}
+
+.section-01 img,
+.section-02 img,
+.section-04 img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: 0.5s;
+}
+
+.section-01 img:hover,
+.section-02 img:hover,
+.section-04 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.text-01,
+.text-02,
+.text-04 {
     text-align: center;
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
 
 }
+
 
 .section-03 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(Aula-Img/img-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 200px 0px 200px 0px;
+    padding: 200px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-03 button {
@@ -114,43 +107,13 @@ header img {
     border: none;
     border-radius: 20px;
     width: 120PX;
-    height: 30PX;
+    height: 40PX;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.section-03 button:hover{
+.section-03 button:hover {
     transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 0px 0px 4px 4px #2B400D;
-}
-
-.section-04 {
-    background-color: #D9D9D9;
-    display: flex;
-    justify-content: center;
-    padding: 100px;
-    gap: 30px;
-}
-
-.section-04 img {
-    border-radius: 10px;
-    height: 220px;
-    width: 25%;
-}
-
-.section-04 img:hover{
-    transform: scale(1.10);
-    transition: 0.5s;
-    box-shadow: 0px 0px 5px 4px ;
-}
-
-.text-04 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 700px;
 }
 
 .rodape {
@@ -158,26 +121,76 @@ header img {
     justify-content: space-between;
     align-items: center;
     background-color: #734124;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .img-rodape img {
-    width: 15%;
+    width: 100%;
+    max-width: 100px;
 }
 
 .icone {
     display: flex;
     align-items: center;
-    padding: 0px 10px;
     gap: 15px;
 }
 
 .icone a {
     color: white;
     text-decoration: none;
-}
-
-.icone a ,img {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .section-01,
+    .section-02,
+    .section-04 {
+        flex-direction: column;
+        padding: 50px 60px;
+    }
+
+    .text-01,
+    .text-02,
+    .text-04 {
+        width: 100%;
+    }
+
+    .navegador ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navegador a {
+        font-size: 1.2rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-03 {
+        padding: 60px 20px;
+        background-attachment: scroll;
+    }
+
+    .section-03 button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .icone {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
