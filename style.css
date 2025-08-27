@@ -61,6 +61,18 @@ header img {
     background-color: #D9D9D9;
 }
 
+.section-05 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #BFA995;
+    padding: 40px;
+}
+
+.section-05 iframe {
+    border-radius: 20px;
+}
+
 .section-01 img,
 .section-02 img,
 .section-04 img {
@@ -86,7 +98,6 @@ header img {
     width: 100%;
 
 }
-
 
 .section-03 {
     background-image: url(Aula-Img/img-1.jpg);
@@ -114,6 +125,37 @@ header img {
 
 .section-03 button:hover {
     transform: scale(1.1);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    padding: 30px;
+    gap: 25px;
+    background-color: #D9D9D9;
+}
+
+.cards {
+    background-color: white;
+    border: 3px solid #BFA995;
+    border-radius: 20px;
+    width: 20vw;
+    height: fit-content;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.cards:hover{
+    border-color: #734124;
+    transform: scale(1.1);
+}
+
+.cards img {
+    border-radius: 20px;
+    height: 180px;
+    width: 100%;
 }
 
 .rodape {
@@ -144,13 +186,25 @@ header img {
     gap: 5px;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 834px) {
 
     .section-01,
     .section-02,
-    .section-04 {
-        flex-direction: column;
+    .section-04,
+    .section-05 {
         padding: 50px 60px;
+    }
+
+    .section-05 {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .section-05 iframe {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
     }
 
     .text-01,
@@ -182,7 +236,6 @@ header img {
         width: 100%;
         max-width: 200px;
     }
-
     .rodape {
         flex-direction: column;
         text-align: center;
