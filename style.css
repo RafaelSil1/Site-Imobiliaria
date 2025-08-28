@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+/* Meu Cabeçalho Todo */
 header {
     display: flex;
     justify-content: space-between;
@@ -11,16 +12,19 @@ header {
     flex-wrap: wrap;
 }
 
+/* A Imagem Do Meu Cabeçalho */
 header img {
     width: 100%;
     max-width: 150px;
 }
 
+/* A Div Do Meu Cabeçalho */
 .logo {
     padding-right: 0;
     width: auto;
 }
 
+/* Ul Do Meu Nav */
 .navegador ul {
     display: flex;
     align-items: center;
@@ -29,15 +33,18 @@ header img {
     flex-wrap: wrap;
 }
 
+/* Li Do Meu Nav */
 .navegador li {
     list-style: none;
 }
 
+/* Ancora Do Meu Nav */
 .navegador a {
     text-decoration: none;
     color: white;
 }
 
+/* Minhas Seção 1,2,4 */
 .section-01,
 .section-02,
 .section-04 {
@@ -61,6 +68,7 @@ header img {
     background-color: #D9D9D9;
 }
 
+/* Minha Seção 5 */
 .section-05 {
     display: flex;
     justify-content: space-evenly;
@@ -69,16 +77,19 @@ header img {
     padding: 40px;
 }
 
+/* Seção 5 Borda Dos Meu Video e Map */
 .section-05 iframe {
     border-radius: 20px;
 }
 
+/* Imagens Da Minha Seção 1,2,4 */
 .section-01 img,
 .section-02 img,
 .section-04 img {
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
+    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -89,7 +100,7 @@ header img {
     box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Texto Das Minha Seçãoes 1,2,4 */
 .text-01,
 .text-02,
 .text-04 {
@@ -99,6 +110,7 @@ header img {
 
 }
 
+/* Seção 3 Imagem De Fundo */
 .section-03 {
     background-image: url(Aula-Img/img-1.jpg);
     background-size: cover;
@@ -111,6 +123,8 @@ header img {
     align-items: center;
 }
 
+
+/* Botão Da Minha Seção 3 ImagemDe Fundo */
 .section-03 button {
     color: white;
     background-color: #2B400D;
@@ -127,6 +141,7 @@ header img {
     transform: scale(1.1);
 }
 
+/* Seção Card */
 .card {
     display: flex;
     justify-content: center;
@@ -137,6 +152,7 @@ header img {
     background-color: #D9D9D9;
 }
 
+/* Minhas Divs Cards */
 .cards {
     background-color: white;
     border: 3px solid #BFA995;
@@ -152,12 +168,14 @@ header img {
     transform: scale(1.1);
 }
 
-.cards img {
-    border-radius: 20px;
+/* Imagens Do Meus Cards */
+.principal-card {
+    border-radius: 15px;
     height: 180px;
     width: 100%;
 }
 
+/* Meu Rodapé Todo */
 .rodape {
     display: flex;
     justify-content: space-between;
@@ -167,17 +185,20 @@ header img {
     flex-wrap: wrap;
 }
 
+/* logo Do Meu Rodapé */
 .img-rodape img {
     width: 100%;
     max-width: 100px;
 }
 
+/* Icones Do MeuRodapé */
 .icone {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+/* Ancora Dos Meus Icones Rodapé */
 .icone a {
     color: white;
     text-decoration: none;
@@ -236,6 +257,23 @@ header img {
         width: 100%;
         max-width: 200px;
     }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        height: fit-content;
+    }
+
+    .cards {
+        transition: ;
+        width: 100%;
+    }
+
+    .cards:hover {
+        transform: none;
+    }
+
     .rodape {
         flex-direction: column;
         text-align: center;
