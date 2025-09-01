@@ -217,6 +217,12 @@ header img {
         padding: 50px 60px;
     }
 
+    .section-01 img:hover,
+    .section-02 img:hover,
+    .section-04 img:hover {
+        transform: none;
+    }
+
     .section-05 {
         justify-content: center;
         gap: 20px;
@@ -266,7 +272,7 @@ header img {
     }
 
     .cards {
-        transition: ;
+        transition: 0.5s;
         width: 100%;
     }
 
