@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-image: url(Aula-Img/pexels-davidmcbee-1546168.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form .img-arrow {
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    width: 10%;
+}
+
+.btn-arrow img {
+    width: 2%;
+}
+
+
+.conteudo {
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 50px;
+    gap: 30px;
+    width: 350px;
+    height: 400px;
+}
+
+
+.put {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 20px;
+}
+
+
+form a {
+    color: white;
+    text-decoration: none;
+}
+
+
+form .btn {
+    background-color: rgb(47, 0, 255);
+    color: white;
+    width: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+form .btn:hover {
+    transform: scale(1.1);
+}
+
+
+.img-logo {
+    width: 50%;
+}
+
+
+.btn {
+    width: 130px;
+}
