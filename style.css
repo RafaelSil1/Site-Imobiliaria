@@ -46,7 +46,6 @@ header img {
 
 /* Minhas Seção 1,2,4 */
 .section-01,
-.section-02,
 .section-04 {
     display: flex;
     justify-content: center;
@@ -60,6 +59,12 @@ header img {
 }
 
 .section-02 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 80px 20px;
+    gap: 30px;
     background-color: #BFA995;
 }
 

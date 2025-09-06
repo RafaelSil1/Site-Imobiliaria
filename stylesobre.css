@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+}
+
+/* Meu Cabeçalho Todo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #734124;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* A Imagem Do Meu Cabeçalho */
+header img {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* A Div Do Meu Cabeçalho */
+.logo {
+    padding-right: 0;
+    width: auto;
+}
+
+/* Ul Do Meu Nav */
+.navegador ul {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Li Do Meu Nav */
+.navegador li {
+    list-style: none;
+}
+
+/* Ancora Do Meu Nav */
+.navegador a {
+    text-decoration: none;
+    color: white;
+}
+
+.section-sobrenos,
+.objt,
+.fund {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-sobrenos {
+    padding: 80px;
+}
+
+.fund img {
+    width: 20%;
+}
+
+/* Meu Rodapé Todo */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #734124;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* logo Do Meu Rodapé */
+.img-rodape img {
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Icones Do MeuRodapé */
+.icone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Ancora Dos Meus Icones Rodapé */
+.icone a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+

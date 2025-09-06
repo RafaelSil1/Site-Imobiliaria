@@ -2,76 +2,116 @@ body {
     margin: 0;
     background-image: url(Aula-Img/pexels-davidmcbee-1546168.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
 }
 
+/* class Formulario */
 .formulario {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-form .img-arrow {
-    position: absolute;
-    top: 200px;
-    left: 650px;
-    width: 10%;
-}
-
-.btn-arrow img {
-    width: 2%;
-}
-
-
+/* Div Conteudo*/
 .conteudo {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.493);
-    border-radius: 50px;
-    gap: 30px;
-    width: 350px;
-    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px; 
 }
 
-
+/* Inputs */
 .put {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     color: black;
     outline: none;
     border: none;
     border-radius: 20px;
-    height: 20px;
+    height: 35px;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 300px;
 }
 
+/* Botão */
+form .btn {
+    background-color: rgb(47, 0, 255);
+    color: white;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
 
+form .btn:hover {
+    transform: scale(1.10);
+}
+
+/* Logo */
+.img-logo {
+    width: 50%;
+    max-width: 150px;
+}
+
+/* Ajuste da seta */
+form .img-arrow {
+    position: relative;
+    width: 15%;
+    max-width: 60px;
+    margin: 10px auto;
+}
+
+.btn-arrow img {
+    width: 30px;
+}
+
+/* Ancora */
 form a {
     color: white;
     text-decoration: none;
 }
 
-
-form .btn {
-    background-color: rgb(47, 0, 255);
-    color: white;
-    width: 200px;
-    padding: 5px;
-    border-radius: 20px;
-    transition: 1s;
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        max-width: 90%;
+        padding: 20px;
+    }
+    .img-logo {
+        width: 40%;
+    }
+    .put {
+        max-width: 100%;
+    }
 }
 
-form .btn:hover {
-    transform: scale(1.1);
-}
+@media (max-width: 480px) {
+    .conteudo {
+        padding: 15px;
+        gap: 15px;
+    }
+    .img-logo {
+        width: 60%;
+    }
+    form .btn {
+        max-width: 100%;
+        padding: 8px;
+    }
 
-
-.img-logo {
-    width: 50%;
-}
-
-
-.btn {
-    width: 130px;
+    form .btn:hover {
+        transform: none;
+    }
 }
