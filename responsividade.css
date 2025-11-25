@@ -1,0 +1,180 @@
+@media (max-width: 834px) {
+
+    .section-01,
+    .section-02,
+    .section-04,
+    .section-05 {
+        padding: 50px 60px;
+    }
+
+    .section-01 img:hover,
+    .section-02 img:hover,
+    .section-04 img:hover {
+        transform: none;
+    }
+
+    .section-05 {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .section-05 iframe {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-ham {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: -30rem;
+        /* Começa escondido acima*/
+        left: -2rem;
+        /* Ajustando o alinhamento do menu*/
+        width: 100%;
+        /* Largura total da caixa do menu*/
+        height: 31vh;
+        /*Altura da caixa*/
+        background-color: #000000;
+        transition: to 0.3s ease-in-out;
+        /* transição suave*/
+        display: flex;
+        /*Alinhamento dos items*/
+        justify-content: center;
+        /* Alinhamento Horizontal*/
+        align-items: center;
+        /* Alinhamento Vertical*/
+    }
+
+    .show {
+        /* Essa class será usada pelo javascript para ação do menu */
+        top: 95px;
+        /* desce suavemente quando é ativado */
+        left: 0rem;
+        /* posicionamento do menu */
+    }
+
+
+    /* MENU HORIZONTAL */
+
+    /* .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 130vh;
+        background-color: #D8D8C0;
+        transition: left 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 999;
+    } */
+
+
+    /* .show {
+        left: 0;
+    } */
+
+    .text-01,
+    .text-02,
+    .text-04 {
+        width: 100%;
+    }
+
+    .navegador ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navegador a {
+        font-size: 1.2rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-03 {
+        padding: 60px 20px;
+        background-attachment: scroll;
+    }
+
+    .section-03 button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        height: fit-content;
+    }
+
+    .cards {
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .cards:hover {
+        transform: none;
+    }
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .icone {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Responsividade login*/
+@media (max-width: 768px) {
+    .conteudo {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .img-logo {
+        width: 40%;
+    }
+
+    .put {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .img-logo {
+        width: 60%;
+    }
+
+    form .btn {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    form .btn:hover {
+        transform: none;
+    }
+}
